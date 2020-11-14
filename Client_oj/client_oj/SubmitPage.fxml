@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="651.0" style="-fx-background-color: khaki;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_oj.SubmitPageController">
+   <children>
+      <ImageView fitHeight="657.0" fitWidth="651.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@images.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="submitButton" layoutX="303.0" layoutY="552.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="96.0" text="Submit" />
+      <ComboBox fx:id="LanguageBox" layoutX="179.0" layoutY="157.0" prefHeight="25.0" prefWidth="172.0" promptText="Choose a Language" style="-fx-background-color: white;" />
+      <TextArea fx:id="codeArea" layoutX="161.0" layoutY="216.0" prefHeight="310.0" prefWidth="441.0" style="-fx-background-color: blue;">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <ComboBox fx:id="ProblemChoiceBox" layoutX="179.0" layoutY="117.0" prefHeight="25.0" prefWidth="172.0" promptText="Choose a Problem" style="-fx-background-color: white;" />
+      <Text fill="#f6ff1c" layoutX="29.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Problems:" wrappingWidth="99.68163526058197">
+         <font>
+            <Font name="Informal Roman" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#dcf000" layoutX="29.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language:">
+         <font>
+            <Font name="Informal Roman" size="28.0" />
+         </font>
+      </Text>
+      <HBox layoutX="64.0" layoutY="24.0" prefHeight="60.0" prefWidth="554.0">
+         <children>
+            <ButtonBar prefHeight="65.0" prefWidth="568.0">
+              <buttons>
+                  <Button fx:id="dashBoardbutton" mnemonicParsing="false" onAction="#dashBoardPageload" style="-fx-background-radius: 8;" text="Dashboard">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                <Button mnemonicParsing="false" prefHeight="25.0" style="-fx-background-radius: 8;" text="Submit Code">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="submissionPageButton" mnemonicParsing="false" onAction="#submissionPageLoad" prefHeight="25.0" prefWidth="351.0" style="-fx-background-radius: 8;" text="My Submissions">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="standingsPagebutton" mnemonicParsing="false" onAction="#standingsPageLoad" style="-fx-background-radius: 8;" text="Standings">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+              </buttons>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ButtonBar>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Text fill="#fbff17" layoutX="24.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Source Code:">
+         <font>
+            <Font name="Informal Roman" size="29.0" />
+         </font>
+      </Text>
+   </children>
+   <effect>
+      <InnerShadow choke="0.51" height="53.62" radius="27.049999999999997" width="56.58" />
+   </effect>
+</AnchorPane>

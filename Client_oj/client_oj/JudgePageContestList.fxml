@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="495.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="client_oj.JudgePageContestListController">
+   <children>
+      <ImageView fitHeight="416.0" fitWidth="495.0" pickOnBounds="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="contestList" layoutX="126.0" layoutY="69.0" prefHeight="242.0" prefWidth="259.0" />
+      <Button fx:id="selectContestButton" layoutX="209.0" layoutY="333.0" mnemonicParsing="false" onAction="#getContestants" text="Select Contest" />
+      <Label fx:id="header" alignment="CENTER" layoutX="162.0" layoutY="38.0" prefHeight="21.0" prefWidth="176.0" text="List of Contests">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="selectContestantButton" disable="true" layoutX="201.0" layoutY="358.0" mnemonicParsing="false" onAction="#getCode" prefHeight="25.0" prefWidth="110.0" text="Select Contestant" visible="false" />
+   </children>
+</AnchorPane>
